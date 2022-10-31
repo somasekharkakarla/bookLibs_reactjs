@@ -21,7 +21,7 @@ class User extends React.Component {
           showError:user.Err
         })
      }else{
-          this.props.navigate('/books',{replace:true, state:{user_token:user.token, name:user.user}})
+          this.props.navigate('/books',{replace:true, state:{user_token:user.token, user:user}})
      }
     }
 
